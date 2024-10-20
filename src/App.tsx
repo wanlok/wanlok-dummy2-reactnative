@@ -28,7 +28,9 @@ function App() {
         <Button
           title="Hello World"
           onPress={() => {
-            CustomShare.open('Nice to meet you');
+            CustomShare.open('Nice to meet you 1234', () => {
+              console.log('COPY CLICK');
+            });
           }}
         />
       </View>
